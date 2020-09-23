@@ -15,5 +15,4 @@ class ApplicationModule {
     @Provides
     @Singleton
     fun provideApiHelper(): StockPriceService = StockPriceServiceImpl()
-
 }

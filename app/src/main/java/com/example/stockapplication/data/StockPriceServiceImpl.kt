@@ -14,7 +14,7 @@ import kotlin.random.Random
 class StockPriceServiceImpl : CoroutineScope, StockPriceService {
 
     companion object {
-        const val NUMBER_OF_STOCKS = 10
+        const val NUMBER_OF_STOCKS = 50
         const val STOCK_EMIT_DELAY = 500L
     }
 
@@ -53,5 +53,4 @@ class StockPriceServiceImpl : CoroutineScope, StockPriceService {
             delay(STOCK_EMIT_DELAY)
         }
     }
-
 }

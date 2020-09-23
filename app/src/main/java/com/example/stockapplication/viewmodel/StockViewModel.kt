@@ -18,7 +18,7 @@ class StockViewModel @ViewModelInject constructor(private val stockPriceService:
     private val stocksView = MutableLiveData<ArrayList<StockView>>()
 
     fun getStocks(): LiveData<ArrayList<StockView>> {
-        return stocksView as LiveData<ArrayList<StockView>>
+        return stocksView
     }
 
     init {
@@ -43,6 +43,4 @@ class StockViewModel @ViewModelInject constructor(private val stockPriceService:
         format.currency = Currency.getInstance("USD")
         return format.format(this)
     }
-
-
 }
